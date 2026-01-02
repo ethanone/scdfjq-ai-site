@@ -1,0 +1,159 @@
+.footer {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 6rem 2rem 3rem;
+  position: relative;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 4rem;
+  margin-bottom: 4rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: var(--white);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.footer-logo {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footer-tagline {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.footer-address {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.footer-section ul li:hover {
+  opacity: 1;
+}
+
+.footer-section a {
+  color: var(--white);
+  opacity: 0.8;
+}
+
+.footer-section a:hover {
+  opacity: 1;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-bottom p {
+  font-size: 1.4rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.footer-links a {
+  color: var(--white);
+  opacity: 0.8;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.footer-links span {
+  opacity: 0.5;
+}
+
+.help-button {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  padding: 1.5rem 2rem;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.help-button:hover {
+  background-color: var(--secondary-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.help-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 4rem 2rem 2rem;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .help-button {
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1.2rem 1.6rem;
+    font-size: 1.4rem;
+  }
+  
+  .help-button span {
+    display: none;
+  }
+}

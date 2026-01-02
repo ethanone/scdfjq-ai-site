@@ -1,0 +1,130 @@
+.global {
+  padding: 8rem 2rem;
+  background: linear-gradient(135deg, var(--gray-100) 0%, var(--white) 100%);
+}
+
+.global-content {
+  margin-bottom: 6rem;
+}
+
+.section-header-left {
+  text-align: left;
+}
+
+.section-header-left .section-divider {
+  margin: 0;
+}
+
+.global-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  max-width: 900px;
+}
+
+.mission-section {
+  margin-top: 6rem;
+}
+
+.mission-card {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+  color: var(--white);
+  padding: 6rem 5rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px, 90px 90px;
+  opacity: 0.6;
+}
+
+.mission-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.mission-title {
+  font-size: 3.6rem;
+  margin-bottom: 3rem;
+  color: var(--white);
+}
+
+.mission-text {
+  font-size: 2rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  opacity: 0.95;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mission-callout {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  opacity: 1;
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: var(--white);
+  color: var(--primary-blue);
+  padding: 1.6rem 3.2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 0.4rem;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-blue);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .global {
+    padding: 6rem 2rem;
+  }
+  
+  .global-description {
+    font-size: 1.6rem;
+  }
+  
+  .mission-card {
+    padding: 4rem 3rem;
+  }
+  
+  .mission-title {
+    font-size: 2.8rem;
+  }
+  
+  .mission-text {
+    font-size: 1.7rem;
+  }
+  
+  .mission-callout {
+    font-size: 1.9rem;
+  }
+  
+  .btn-secondary {
+    font-size: 1.6rem;
+    padding: 1.4rem 2.8rem;
+  }
+}

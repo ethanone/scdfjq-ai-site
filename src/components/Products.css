@@ -1,0 +1,135 @@
+.products {
+  padding: 8rem 2rem;
+  background-color: var(--gray-100);
+}
+
+.section-description {
+  font-size: 1.8rem;
+  color: var(--text-secondary);
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 4rem;
+  margin-top: 6rem;
+}
+
+.product-card {
+  background-color: var(--white);
+  padding: 4rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.product-number {
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--light-blue);
+  line-height: 1;
+  margin-bottom: 2rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  opacity: 0.3;
+}
+
+.product-title {
+  font-size: 2.6rem;
+  color: var(--primary-blue);
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.product-description {
+  font-size: 1.7rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.product-features {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.product-features li {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.product-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--secondary-blue);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.product-features strong {
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .products {
+    padding: 6rem 2rem;
+  }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .product-card {
+    padding: 3rem 2rem;
+  }
+  
+  .product-number {
+    font-size: 6rem;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+  
+  .product-title {
+    font-size: 2.2rem;
+  }
+  
+  .product-description {
+    font-size: 1.6rem;
+  }
+  
+  .product-features li {
+    font-size: 1.5rem;
+  }
+}

@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
 import Products from './components/Products'
+import SmartWater from './components/SmartWater'
 import Advantages from './components/Advantages'
 import Global from './components/Global'
 import Footer from './components/Footer'
@@ -18,6 +19,7 @@ function App() {
         <Hero />
         <About />
         <Products />
+        <SmartWater />
         <Advantages />
         <Global />
       </main>

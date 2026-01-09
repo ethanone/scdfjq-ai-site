@@ -58,10 +58,12 @@
 .footer-section a {
   color: var(--white);
   opacity: 0.8;
+  transition: all 0.2s ease;
 }
 
 .footer-section a:hover {
   opacity: 1;
+  text-decoration: underline;
 }
 
 .footer-bottom {

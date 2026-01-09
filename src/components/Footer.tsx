@@ -18,6 +18,7 @@ const Footer = () => {
             <ul>
               <li><a href="#products">电气自控解决方案</a></li>
               <li><a href="#products">厂务监控管理系统</a></li>
+              <li><a href="#smart-water">智慧水务解决方案</a></li>
               <li><a href="#products">系统集成服务</a></li>
             </ul>
           </div>
@@ -34,6 +35,12 @@ const Footer = () => {
           <div className="footer-section">
             <h4>联系我们</h4>
             <ul>
+              <li>
+                <a href="tel:+8617713578045">电话：+86 17713578045</a>
+              </li>
+              <li>
+                <a href="mailto:466307629@qq.com">邮箱：466307629@qq.com</a>
+              </li>
               <li>地址：四川省成都市</li>
             </ul>
           </div>

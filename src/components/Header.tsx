@@ -34,6 +34,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
             <a href="#about" onClick={() => setIsMenuOpen(false)}>关于我们</a>
             <a href="#products" onClick={() => setIsMenuOpen(false)}>核心产品</a>
+            <a href="#smart-water" onClick={() => setIsMenuOpen(false)}>智慧水务</a>
             <a href="#advantages" onClick={() => setIsMenuOpen(false)}>技术优势</a>
             <a href="#global" onClick={() => setIsMenuOpen(false)}>全球业务</a>
             <a href="#contact" className="btn-contact" onClick={() => setIsMenuOpen(false)}>联系我们</a>
